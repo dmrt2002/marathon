@@ -37,3 +37,8 @@
     width: 94vw;
   }
 }
+@media (max-width:726px) {
+  .masthead {
+    background-image: url("../img/marathon-mobile.jpg") !important;
+  }
+}
