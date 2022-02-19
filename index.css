@@ -3,10 +3,9 @@
     height: 100vh;
   }
 .masthead {
-    height: 100vh !important;
+    height: 110vh !important;
     font-family: 'Dancing Script', cursive !important;
-    background-image: url("../img/sports-970443_1920.jpg") !important;
-    
+    background-image: url("./sports-970443_1920.jpg") !important;
 }
 .rotate-45 {
   -webkit-transform:rotate(45deg);
@@ -36,10 +35,25 @@
   .image-width {
     width: 94vw;
   }
-}
-@media (max-width:726px) {
-  .masthead {
-    background-image: url("../img/marathon-mobile.jpg") !important;
+  .padding {
+    padding: 3rem !important;
   }
 }
+@media (max-width:650px) {
+  .masthead {
+    background-image: url("./marathon-mobile.jpg") !important;
+  }
+}
+@media (min-height:600px) {
+  .masthead{
+    height: 100vh !important;
+  }
+}
+.navbar-header {
+  float: left;
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+}
+.navbar-brand {float:none;}
 
