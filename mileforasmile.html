@@ -30,19 +30,112 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <!-- Start: Black Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <img src="./assets/img/RNSIT.svg" class="padding-left" height="60" alt="">
-        <a class="navbar-brand" href="#">RNSIT</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-          </div>
+    <nav class="nav navin">
+        <div class="nav-wrapper">
+            <img class="svg-logo hidden" src="images/RNSIT.svg" alt="rnsit logo" style="height: 65px; width: 65px;">
+            <a href="index.html" class="brand-logo" style="color: white; margin-left:0px; ">RNSIT</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <!-- <li class ="navali"><a id="home" href="index.html">Home</a></li> -->
+                 <li class="navali"><a id="home" href="index.html">Home</a></li>
+                <li class="navali"><a class="dropdown-button" href="#!" data-activates="dropdown3">About Us<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li class="navali"><a id="contact" onclick="navig('contact');" href="contact.html">Contact</a></li>
+                <!-- Dropdown Trigger -->
+                <li class="navali"><a class="dropdown-button" href="#!" data-activates="dropdown1">Departments<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li class="navali"><a class="dropdown-button" href="#!" data-activates="dropdown2">More<i class="material-icons right">arrow_drop_down</i></a></li>
+                <!-- Dropdown Structure -->
+                <ul id="dropdown1" class="dropdown-content">
+
+                    <li class="navali"><a id="cse" href="cse.html">CSE</a></li>
+                    <li class="navali"><a id="ece" href="ece.html">ECE</a></li>
+                    <li class="navali"><a id="eee" href="eee.html">EEE</a></li>
+                    <li class="navali"><a id="ise" href="ise.html">ISE</a></li>
+                    <li class="navali"><a id="eie" href="eie.html">EIE</a></li>
+                    <li class="navali"><a id="mech" href="mech.html">MECH</a></li>
+                    <li class="navali"><a id="civil" href="civil.html">CIVIL</a></li>
+                    <li class="divider"></li>
+                    <li class="navali"><a id="mba" href="http://www.rnsitmba.ac.in/">MBA</a></li>
+                    <li class="navali"><a id="mca" href="mca.html">MCA</a></li>
+                    <li class="divider"></li>
+                    <li class="navali"><a id="physics" href="physics.html">Physics</a></li>
+                    <li class="navali"><a id="chemistry" href="chemistry.html">Chemistry</a></li>
+                    <li class="navali"><a id="mathematics" href="mathematics.html">Mathematics</a></li>
+                    <li class="divider"></li>
+                    <li class="navali"><a id="eee" href="hr.html">Placements &amp; HR</a></li>
+
+                </ul>
+            </ul>
+            <ul id="dropdown2" class="dropdown-content">
+                <li class="navali"><a id="cse" href="alumni.html">ALUMNI</a></li>
+                <li class="navali"><a id="ece" href="admissions.html">ADMISSIONS &amp; OFFICE</a></li>
+                <li class="navali"><a id="mca" href="cultural.html">CULTURAL</a></li>
+                <li class="navali"><a id="mca" href="facilities.html">FACILITIES</a></li>
+            </ul>
+            <ul id="dropdown3" class="dropdown-content">
+                <li class="navali"><a id="chair" href="chairman.html">CHAIRMAN</a></li>
+                
+                <li class="navali"><a id="princi" href="principal.html">PRINCIPAL</a></li>
+                <!--<li class="navali"><a id="regi" href="registrar.html">REGISTRAR</a></li>-->
+            </ul>
+            <!--mobile!-->
+            <ul class="side-nav" id="mobile-demo">
+                <li class="navali"><a id="home" href="index.html">Home</a></li>
+                <li class="navali"><a class="dropNav2">About Us<i class="material-icons right aud">arrow_drop_down</i></a></li>
+                <li class="innerli">
+                    <div class="innerNav2">
+                        <a id="chair" class="nava" href="chairman.html">Chairman</a>
+                        
+                        <a id="princi" class="nava" href="principal.html">Principal</a>
+                        <!--<a id="regi" class="nava" href="registrar.html">Registrar</a>-->
+                    </div>
+                </li>
+                <li class="navali"><a id="contact" href="contact.html">Contact</a></li>
+                <li class="navali"><a class="dropNav">Departments<i class="material-icons right dd">arrow_drop_down</i></a></li>
+                <li class="innerli">
+                    <div class="innerNav">
+                        <ul class="navali">
+                            <li class=" nava divider"></li>
+                        </ul>
+                        <a id="cse" class="nava" href="cse.html">CSE</a>
+                        <a id="ece" class="nava" href="ece.html">ECE</a>
+                        <a id="eee" class="nava" href="eee.html">EEE</a>
+                        <a id="ise" class="nava" href="ise.html">ISE</a>
+                        <a id="eie" class="nava" href="eie.html">EIE</a>
+                        <a id="mech" class="nava" href="mech.html">MECH</a>
+                        <a id="civil" class="nava" href="civil.html">CIVIL</a>
+                        <ul class="navali">
+                            <li id="" class=" nava divider"></li>
+                        </ul>
+                        <a id="mba" class="nava awes" href="http://www.rnsitmba.ac.in/">MBA</a>
+                        <a id="mca" class="nava awes" href="mca.html">MCA</a>
+                        <ul class="navali">
+                            <li id="" class=" nava divider"></li>
+                        </ul>
+                        <a id="physics" class="nava awes" href="physics.html">Physics</a>
+                        <a id="chemistry" class="nava awes" href="chemistry.html">Chemistry</a>
+                        <a id="mathematics" class="nava awes" href="mathematics.html">Mathematics</a>
+                        <ul class="navali">
+                            <li id="" class=" nava divider"></li>
+                        </ul>
+                        <a id="hr" class="nava" href="hr.html">Placements &amp; HR</a>
+
+                    </div>
+                </li>
+                <li class="navali"><a class="dropNav1">Others<i class="material-icons right md">arrow_drop_down</i></a></li>
+                <li class="innerli">
+                    <div class="innerNav1">
+                        <a id="alum" class="nava" href="alumni.html">Alumni</a>
+                        <a id="admission" class="nava" href="admissions.html">ADMISSIONS &amp; OFFICE</a>
+                        <a id="faci" class="nava" href="cultural.html">Cultural</a>
+                        <a id="faci" class="nava" href="facilities.html">Facilities</a>
+                    </div>
+                </li>
+            </ul>
         </div>
-      </nav>
+    </nav>
     <header class="text-center text-white masthead">
         <div class="bg-overlay"></div>
         <div class="masthead-content">
@@ -51,18 +144,18 @@
                 <h2 class="masthead-subheading mb-0">Fight against cancer &nbsp;<img class="rotate-45" src="./assets/img/cancer-removebg-preview (1).png" alt=""></h2><a class="btn btn-primary btn-xl rounded-pill mt-4" role="button" href="https://forms.gle/8oQSU23S1GUe7tKU8" target="_blank" style="font-size: 20.4px;padding-top: 23px;padding-right: 36px;padding-left: 36px;background: #ff50a5;">REGISTER NOW</a>
             </div>
         </div>
+
     </header>
     <section>
         <div class="container" id="main">
             <div class="row align-items-center">
                 <div class="col-lg-6 order-lg-2" style="margin-top: 75px;">
-                    <br><br><br><br>
-                    <div class="p-5"><img src="./assets/img/Mile for a Smile (1).png" height="450"></div>
+                    <div class="p-5"><img class=" img-fluid" src="./assets/img/Mile for a Smile (1).png"></div>
                 </div>
                 <div class="col-lg-6 order-lg-1" style="margin-top: 75px;height: 456px;">
                     <div class="p-5" style="margin-bottom: 100;">
                         <h2 class="display-4" style="color: #ff387e;">MILE FOR A SMILE</h2>
-                        <p style="font-weight: bold;text-align: justify;">Join our 5K run and Walkathon event on the Sunday , March 6 , 2022 organised by students of RNS Institute Of Technology.
+                        <p style="font-weight: bold;text-align: justify;">Join our 6K run and Walkathon event on the Sunday , March 6 , 2022 organised by students of RNS Institute Of Technology.
                             This event is organised for a wonderful cause, to meet the critical financial needs of the underserved living with breast cancer. Be it a walkathon or marathon that takes your fancy, we have a running challenge for you!
                            1 in 8 women and some men suffer from Breast Cancer in their lifetime. YOU can help us find a cure for breast cancer by making small contribution towards this cause.
                            Make sure you seize this opportunity, learn as much as possible, spread awareness and don’t forget to have fun in the process!!<br></p>
@@ -80,7 +173,7 @@
                 <div class="col-lg-6 order-lg-2">
                     <div class="p-5">
                         <h2 class="display-4">Scan the QR</h2>
-                        <p style="text-align: justify;font-weight: bold;">Brief about basic process :<br>The PINKATHON will begin at 7 am and the walkathon at 9 am, both on the very same day inside our campus. Registration fee for each event is ₹450. Our event is open to everyone: women, men, children, families and friends. The prizes for the winners are upto 20,000 <br> Scan the QR Code to register for the event, or Click the link below</p><a href="https://docs.google.com/forms/d/e/1FAIpQLScIOt8YniVSq_8PygK9Umxu8leL3GMwpcMHY78lfQ9St2KdrQ/viewform" target="_blank"><button class="btn btn-primary" type="button" style="border-radius: 48px;font-size: 25px;background: var(--bs-primary);font-family: 'Noto Sans Inscriptional Pahlavi', sans-serif;font-weight: bold;width: 187.75px;border-width: 0px;">Register Now</button></a>
+                        <p style="text-align: justify;font-weight: bold;">Brief about basic process :<br>The 6K will begin at 7 am and the walkathon at 9 am, both on the very same day inside our campus. Registration fee for each event is ₹450. Our event is open to everyone: women, men, children, families and friends. The prizes for the winners are upto 20,000 <br> Scan the QR Code to register for the event, or Click the link below</p><a href="https://docs.google.com/forms/d/e/1FAIpQLScIOt8YniVSq_8PygK9Umxu8leL3GMwpcMHY78lfQ9St2KdrQ/viewform" target="_blank"><button class="btn btn-primary" type="button" style="border-radius: 48px;font-size: 25px;background: var(--bs-primary);font-family: 'Noto Sans Inscriptional Pahlavi', sans-serif;font-weight: bold;width: 187.75px;border-width: 0px;">Register Now</button></a>
                     </div>
                 </div>
             </div>
@@ -94,7 +187,7 @@
                 </div>
                 <div class="col-lg-6 order-lg-1">
                     <div class="p-5">
-                        <h2 class="display-4">5K Run</h2>
+                        <h2 class="display-4">6K Run</h2>
                         <p style="font-weight: bold;text-align: justify;">The costs associated with radiation therapy, chemotherapy, and reconstructive surgery can be exorbitant. This walkathon is a step towards prevention of breast cancer. Exercise, as per doctor's suggestion, is must to keep cancer at bay, along with a healthy diet. Therefore this walkathon  is a golden opportunity knocking at your door to educate yourself and those around you .
 
                             So, participating in this event is your first step towards ensuring your health is in check.<br></p>
@@ -149,6 +242,10 @@
             </div>
         </div>
     </footer><!-- End: Dark footer with social media icons -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+    <script src="js/index.js"></script>
+    <script type="text/javascript" src="js/navbar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/Bold-BS4-Animated-Back-To-Top.js?h=25fe335c21086050d7d683aa1d563dd6"></script>
     <script src="assets/js/DG---BS5-Countdown.js?h=7aca5e9707447da49cc1d07ce02b3861"></script>
