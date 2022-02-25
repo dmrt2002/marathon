@@ -179,17 +179,22 @@ a{
 }
 @media (max-width: 455px) and (min-width:410px){
  #main {
-   padding-bottom: 10vh;
+   padding-bottom: 2vw;
  }
 }
 @media (max-width: 410px) and (min-width:360px){
   #main {
-    padding-bottom: 25vh;
+    padding-bottom: 35vw;
   }
  }
- @media (max-width: 360px) and (min-width:300px){
+ @media (max-width: 360px) and (min-width:345px){
   #main {
-    padding-bottom: 40vh;
+    padding-bottom: 60vw;
+  }
+ }
+ @media (max-width: 345px) and (min-width:320px){
+  #main {
+    padding-bottom: 80vw;
   }
  }
 
