@@ -2,10 +2,14 @@
 .carousel-item {
     height: 100vh;
   }
+
 .masthead {
-    height: 110vh !important;
+    height: 115vh !important;
     font-family: 'Dancing Script', cursive !important;
     background-image: url("./sports-970443_1920.jpg") !important;
+}
+h1 {
+  font-family: 'Dancing Script', cursive !important;
 }
 .rotate-45 {
   -webkit-transform:rotate(45deg);
@@ -42,6 +46,11 @@
     margin-right: 45vw;
   }
 }
+@media (min-width: 972px) {
+  #myVideo {
+    margin-top: 5vh;
+  }
+}
 @media (max-width:650px) {
   .masthead {
     background-image: url("./marathon-mobile.jpg") !important;
@@ -60,4 +69,143 @@
 .navbar {
   padding-top: 0px !important;
   padding-bottom: 0px !important;
+}
+
+.banner {
+  width: 80vw;
+  padding:60px 0;
+  font-family: 'Dancing Script', cursive !important;
+  text-align: center;
+  background-image: url("./banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80vw;
+  color: white;
+}
+
+.headingbanner {
+  font-family: 'Dancing Script', cursive !important;
+  color: black;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button1 {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.button1 {
+  transition-duration: 0.4s;
+  background-color: rgba(0, 0, 0, 0.63);
+}
+a{
+  text-decoration: none;
+}
+.button1 {
+  border: none;
+  color: white;
+  padding: 9px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+@media (max-width:660px) {
+  .button1 {
+    padding: 6px 12px;
+    font-size: 10px;
+  }
+}
+.click-here {
+  color: white;
+}
+.click-here:hover {
+  color: white;
+}
+.button1:hover {
+  background-color: transparent; /* Green */
+  color: white;
+}
+.subheading {
+  color: white;
+}
+.sponsor-head {
+  text-align: center;
+}
+.button2,.button3 {
+  border: none;
+  color: white;
+  padding: 9px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 28px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button2,.button3 {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.button2,.button3 {
+  transition-duration: 0.4s;
+  background-color: rgba(0, 0, 0, 0.63);
+}
+.button2:hover {
+  background-color: transparent; /* Green */
+  color: white;
+}
+.button2:hover {
+  background-color: transparent; /* Green */
+  color: white;
+}
+.button3:hover {
+  background-color: rgb(243, 29, 207); /* Green */
+  color: white;
+}
+@media (min-width: 992px){
+ .masthead .masthead-content .masthead-subheading {
+    font-size: 3rem !important;
+}
+.masthead-heading {
+  font-size: 4rem !important;
+}
+}
+@media (max-width: 455px) and (min-width:410px){
+ #main {
+   padding-bottom: 10vh;
+ }
+}
+@media (max-width: 410px) and (min-width:360px){
+  #main {
+    padding-bottom: 25vh;
+  }
+ }
+ @media (max-width: 360px) and (min-width:300px){
+  #main {
+    padding-bottom: 40vh;
+  }
+ }
+
+
+.overlay {
+  position: absolute;
+  width: 15%;
+  height: 40%;
+  left: 42%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#wrapper {
+  position: relative;
+  display: inline-block;
 }
