@@ -123,6 +123,9 @@ a{
   }
 }
 .click-here {
+  color: black;
+}
+.click-here-main {
   color: white;
 }
 .click-here:hover {
@@ -138,9 +141,21 @@ a{
 .sponsor-head {
   text-align: center;
 }
-.button2,.button3 {
+.button2 {
   border: none;
   color: white;
+  padding: 9px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 28px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button3  {
+  border: none;
+  color: black;
   padding: 9px 18px;
   text-align: center;
   text-decoration: none;
@@ -153,9 +168,13 @@ a{
 .button2,.button3 {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
-.button2,.button3 {
+.button2 {
   transition-duration: 0.4s;
   background-color: rgba(0, 0, 0, 0.63);
+}
+.button3 {
+  transition-duration: 0.4s;
+  background-color: transparent;
 }
 .button2:hover {
   background-color: transparent; /* Green */
@@ -239,6 +258,6 @@ a{
   justify-content: center;
 }
 .padding-img {
-  padding-left: 5vw;
-  padding-right: 5vw;
+  padding-left: 10px;
+  padding-right: 10px;
 }
